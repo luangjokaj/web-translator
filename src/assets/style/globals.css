@@ -1,0 +1,9 @@
+html, body {
+	background: white;
+	font-family: sans-serif;
+	color: black;;
+}
+
+footer {
+	display: flex;
+}
