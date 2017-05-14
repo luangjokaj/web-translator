@@ -23,8 +23,8 @@ const translate = function (jsdata) {
 
 let langCode = navigator.language.substr(0, 2);
 
-if (Cookies.get('lang') == undefined) {
-    Cookies.set('lang', langCode, { path: '' }, { expires: 365 });
+if (Cookies.get('lang') === undefined) {
+    Cookies.set('lang', langCode, { expires: 365 }, { path: '' });
 }
 const cookieLang = Cookies.get('lang');
 console.log(cookieLang);
@@ -42,17 +42,17 @@ else if (url == 'en') {
 }
 
 $('#changeEn').on('click', function () {
-    Cookies.set('lang', 'en', { path: '' }, { expires: 365 });
+    Cookies.set('lang', 'en', { expires: 365 }, { path: '' });
     window.location.reload();
 })
 
 $('#changeDe').on('click', function () {
-    Cookies.set('lang', 'de', { path: '' }, { expires: 365 });
+    Cookies.set('lang', 'de', { expires: 365 }, { path: '' });
     window.location.reload();
 })
 
 $('#changeIt').on('click', function () {
-    Cookies.set('lang', 'it', { path: '' }, { expires: 365 });
+    Cookies.set('lang', 'it', { expires: 365 }, { path: '' });
     window.location.reload();
 })
 
