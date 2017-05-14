@@ -1,4 +1,4 @@
-# Web Translator [![Dependencies](https://david-dm.org/luangjokaj/staticweb-build/status.svg)](https://david-dm.org/luangjokaj/staticweb-build/)
+# Web Translator [![Dependencies](https://david-dm.org/luangjokaj/web-translator/dev-status.svg)](https://david-dm.org/luangjokaj/web-translator?type=dev)
 A simple multilingual translator for websites, using jQuery and js-cookie.
 
 ## How it works? 🛠
