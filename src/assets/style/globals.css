@@ -1,9 +1,24 @@
 html, body {
 	background: white;
 	font-family: sans-serif;
-	color: black;;
+	color: black;
+}
+
+body {
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 footer {
 	display: flex;
+}
+
+hr {
+	border: none;
+	border-bottom: solid 1px #E5E5E5;
+	margin: 20px 0;
+}
+
+button {
+	margin: 0 20px 0 0;
 }

@@ -47,6 +47,7 @@ var headerJS = [
 ];
 var footerJS = [
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/js-cookie/src/js.cookie.js',
     'src/assets/js/**'
 ];
 //--------------------------------------------------------------------------------------------------
