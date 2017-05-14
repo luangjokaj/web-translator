@@ -1,3 +1,4 @@
+const langs = ['en', 'it', 'de'];
 let url = window.location.hash;
 url = url.toString().replace('#', '');
 
@@ -8,7 +9,6 @@ $(window).on('load', function () {
 	AOS.init();
 });
 
-const langs = ['en', 'it', 'de'];
 const translate = function (jsdata) {
 	$("[tkey]").each(function (index) {
 		var strTr = jsdata [$(this).attr('tkey')];
@@ -36,6 +36,10 @@ else if (url == 'it') {
 }
 
 else if (url == 'en') {
+	$.getJSON('lang/en.json', translate);
+}
+
+else {
 	$.getJSON('lang/en.json', translate);
 }
 
