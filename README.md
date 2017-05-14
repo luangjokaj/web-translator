@@ -39,7 +39,9 @@ else {
  <h1 tkey="helloworld">Hello World</h1>
  <p tkey="hellointroduction">Introduction</p>
  ```
-
+ 
+ ### Have fun ✌️
+ ![Demo Preview](http://i.imgur.com/vZ3aaCQ.png)
 
 ## License ⚖️
 MIT
