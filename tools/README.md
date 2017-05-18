@@ -1,12 +1,11 @@
-# Static Web Build [![Dependencies](https://david-dm.org/luangjokaj/staticweb-build/status.svg)](https://david-dm.org/luangjokaj/staticweb-build/)
- #
+# Static Web Build [![Dependencies](https://david-dm.org/DEEP-IMPACT-AG/staticweb-build/dev-status.svg)](https://david-dm.org/luangjokaj/staticweb-build?type=dev)
 A simple workflow for static websites with live-reload local server, Babel transpiler for JavaScript and bundling CSS with PostCSS and CSSNext.
 
 ___
 
 ### Features ⚡️
 * Processing styles using PostCSS with CSSNext
-* Babel Transpiler for JavaScript (ES16)
+* Babel Transpiler for JavaScript (ES6)
 * JavaScript Concatenating and Minification
 * CSS Minification
 * HTML Minification
