@@ -52,6 +52,6 @@ $('#changeIt').on('click', function () {
 });
 
 $('#removeLang').on('click', function () {
-	Cookies.remove('lang', { path: '' });
+	Cookies.remove('lang');
 	window.location.reload();
 });
