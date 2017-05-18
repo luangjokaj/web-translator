@@ -29,26 +29,15 @@ function changeLang(lang) {
 	Cookies.set('lang', lang, { expires: 365 }, { path: '' });
 }
 
-if (url == 'de') {
-	changeLang('de');
-}
+if (url == 'de') changeLang('de');
 
-else if (url == 'it') {
-	changeLang(it);
-}
+else if (url == 'it') changeLang(it);
 
-else if (url == 'en') {
-	changeLang('en');
-}
+else if (url == 'en') changeLang('en');
 
-else if (langs.indexOf(cookieLang) >= 0) {
-	changeLang(cookieLang);
-}
+else if (langs.indexOf(cookieLang) >= 0) changeLang(cookieLang);
 
-else {
-	$.getJSON('lang/en.json', translate);
-	changeLang('en');
-}
+else changeLang('en');
 
 $('#changeEn').on('click', function () {
 	changeLang('en');
