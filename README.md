@@ -1,6 +1,9 @@
 # Web Translator [![Dependencies](https://david-dm.org/luangjokaj/web-translator/dev-status.svg)](https://david-dm.org/luangjokaj/web-translator?type=dev)
 A simple multilingual translator for websites, using jQuery and js-cookie.
 
+### Demo 🌎
+https://www.riangle.com/web-translator/
+
 ## How it works? 🛠
 The script automatically detects the browsers default language:
 ```javascript
