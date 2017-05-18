@@ -14,7 +14,7 @@ const translate = function (jsdata) {
 		var strTr = jsdata [$(this).attr('tkey')];
 		$(this).html(strTr);
 	});
-}
+};
 
 let langCode = navigator.language.substr(0, 2);
 
@@ -24,41 +24,45 @@ if (Cookies.get('lang') === undefined) {
 
 const cookieLang = Cookies.get('lang');
 
-if (langs.includes(cookieLang))
-	$.getJSON('lang/' + cookieLang + '.json', translate);
+function changeLang(lang) {
+	$.getJSON('lang/' + lang + '.json', translate);
+	Cookies.set('lang', lang, { expires: 365 }, { path: '' });
+}
 
-else if (url == 'de') {
-	$.getJSON('lang/de.json', translate);
+if (url == 'de') {
+	changeLang('de');
 }
 
 else if (url == 'it') {
-	$.getJSON('lang/it.json', translate);
+	changeLang(it);
 }
 
 else if (url == 'en') {
-	$.getJSON('lang/en.json', translate);
+	changeLang('en');
+}
+
+else if (langs.indexOf(cookieLang) >= 0) {
+	changeLang(cookieLang);
 }
 
 else {
 	$.getJSON('lang/en.json', translate);
+	changeLang('en');
 }
 
 $('#changeEn').on('click', function () {
-	Cookies.set('lang', 'en', { expires: 365 }, { path: '' });
-	window.location.reload();
-})
+	changeLang('en');
+});
 
 $('#changeDe').on('click', function () {
-	Cookies.set('lang', 'de', { expires: 365 }, { path: '' });
-	window.location.reload();
-})
+	changeLang('de');
+});
 
 $('#changeIt').on('click', function () {
-	Cookies.set('lang', 'it', { expires: 365 }, { path: '' });
-	window.location.reload();
-})
+	changeLang('it');
+});
 
 $('#removeLang').on('click', function () {
 	Cookies.remove('lang', { path: '' });
 	window.location.reload();
-})
+});
