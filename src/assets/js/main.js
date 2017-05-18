@@ -11,7 +11,7 @@ $(window).on('load', function () {
 
 const translate = function (jsdata) {
 	$("[tkey]").each(function (index) {
-		var strTr = jsdata [$(this).attr('tkey')];
+		let strTr = jsdata [$(this).attr('tkey')];
 		$(this).html(strTr);
 	});
 };
