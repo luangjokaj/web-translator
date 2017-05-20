@@ -25,7 +25,7 @@ else {
 	$.getJSON('lang/en.json', translate);
 }
  ```
- #### Translate
+ ### Translate
  ```javascript
  const translate = function (jsdata) {
  	$("[tkey]").each(function (index) {
@@ -37,7 +37,7 @@ else {
  
  The translate function looks for all elements in the DOM with the `tkey` attribute and it replaces the content with the translation corresponding to that key. The translation samples can be found at: `src/lang/de.json`, `src/lang/en.json`, `src/lang/it.json`;
  
- #### DOM Sample
+ ### DOM Sample
  ```html
  <h1 tkey="helloworld">Hello World</h1>
  <p tkey="hellointroduction">Introduction</p>
