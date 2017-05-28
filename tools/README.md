@@ -40,7 +40,7 @@ This will start the development server. The server is based on **browserSync**, 
 ![Terminal](http://i.imgur.com/6s4DUqT.png)
 
 ### Templating ✍️
-To avoid repetitve **HTML** code the build uses [gulp-file-include](https://github.com/coderhaoxin/gulp-file-include), it allow us to re-use chunks of code written in separate files. It is recommended to place the included files in the `src/includes` directory to keep track of changes and live-reload.
+To avoid repetitive **HTML** code the build uses [gulp-file-include](https://github.com/coderhaoxin/gulp-file-include), it allow us to re-use chunks of code written in separate files. It is recommended to place the included files in the `src/includes` directory to keep track of changes and live-reload.
 
 ### File Structure 🏗
     
@@ -58,6 +58,7 @@ To avoid repetitve **HTML** code the build uses [gulp-file-include](https://gith
     │   ├── IntelliJ.xml         # IntelliJ code style
     └── .babelrc                 # Babel configuration
     └── .gitignore               # Git ignored files
+    └── gulpfile.js              # Gulp configuration
     └── LICENSE                  # License agreements
     └── package.json             # Node packages
     └── README.md                # You are reading this
@@ -103,10 +104,14 @@ Currently, PostCSS has more than 200 plugins. You can find all of the plugins i
 /* -------------------------------------------------------------------------------------------------
     PostCSS Plugins
 ------------------------------------------------------------------------------------------------- */
-var plugins = [
-    partialimport,
-    cssnext({}),
-    cssnano()
+var pluginsDev = [
+	partialimport,
+	cssnext()
+];
+var pluginsProd = [
+	partialimport,
+	cssnext(),
+	cssnano()
 ];
 //--------------------------------------------------------------------------------------------------
 ```
