@@ -16,7 +16,13 @@ const translate = function (jsdata) {
 	});
 };
 
-let langCode = navigator.language.substr(0, 2);
+let langCode;
+
+if (navigator.userLanguage) {
+	langCode = navigator.userLanguage.substr(0, 2);
+} else {
+	langCode = navigator.language.substr(0, 2);
+}
 
 if (Cookies.get('lang') === undefined) {
 	Cookies.set('lang', langCode, { expires: 365 }, { path: '' });
