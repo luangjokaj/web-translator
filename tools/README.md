@@ -1,7 +1,7 @@
 # Static Web Build [![Dependencies](https://david-dm.org/DEEP-IMPACT-AG/staticweb-build/dev-status.svg)](https://david-dm.org/luangjokaj/staticweb-build?type=dev)
 A simple workflow for static websites with live-reload local server, Babel transpiler for JavaScript and bundling CSS with PostCSS and CSSNext.
 
-https://staticbuild.website/
+🌍 https://staticbuild.website/
 
 ___
 
@@ -33,7 +33,7 @@ $ npm install
 ```
 
 ## Development 👾
-To start the development server just run the `dev` task.
+To start the development server just run the `dev` task:
 ```
 $ npm run dev
 ```
@@ -57,7 +57,7 @@ To avoid repetitive **HTML** code the build uses [gulp-file-include](https://git
 })
 ```
 
-/includes/helmet.html
+`/includes/helmet.html`
 ```html
 <title>@@title</title>
 ```
@@ -69,7 +69,7 @@ To avoid repetitive **HTML** code the build uses [gulp-file-include](https://git
 });
 ```
 
-/includes/header.html
+`/includes/header.html`
 ```html
 <article>
 	<h1>@@title</h1>
@@ -88,7 +88,7 @@ To avoid repetitive **HTML** code the build uses [gulp-file-include](https://git
 </body>
 ```
 
-/includes/loop-article.html
+`/includes/loop-article.html`
 ```html
 <article>
 	<h1>@@title</h1>
@@ -149,7 +149,7 @@ ___
 **Note:** The `Gulpfile.js` requires a build restart for any changes to take effect.
 
 ### PostCSS Plugins 🎨
-Currently, PostCSS has more than 200 plugins. You can find all of the plugins in the [plugins list] or in the [searchable catalog].
+Currently, [PostCSS](http://postcss.org/) has more than 200 plugins. You can find all of the plugins in the [plugins list] or in the [searchable catalog]. [CSSNext](http://cssnext.io/) is installed in the default configuration.
 
 [searchable catalog]: http://postcss.parts
 [plugins list]:       https://github.com/postcss/postcss/blob/master/docs/plugins.md
