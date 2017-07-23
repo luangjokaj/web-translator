@@ -1,8 +1,7 @@
-# Web Translator [![Dependencies](https://david-dm.org/luangjokaj/web-translator/dev-status.svg)](https://david-dm.org/luangjokaj/web-translator?type=dev)
-A simple multilingual translator for websites, using jQuery and js-cookie.
+# Static Web Build [![Dependencies](https://david-dm.org/DEEP-IMPACT-AG/staticweb-build/dev-status.svg)](https://david-dm.org/DEEP-IMPACT-AG/staticweb-build?type=dev)
+A simple workflow for static websites with live-reload local server, Babel transpiler for JavaScript and bundling CSS with PostCSS and CSSNext.
 
-### Demo 🌎
-https://www.riangle.com/web-translator/
+🌍 https://staticbuild.website/
 
 ## How it works? 🛠
 The script automatically detects the browsers default language:
